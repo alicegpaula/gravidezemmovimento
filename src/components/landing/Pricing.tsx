@@ -31,7 +31,7 @@ const Pricing = () => {
           {/* Savings */}
           <div className="space-y-6">
             <h3 className="text-xl font-serif mb-4">
-              Com o Gravidez em Movimento, <span className="text-accent">você economiza:</span>
+              Tudo isso <span className="text-accent">incluso no curso:</span>
             </h3>
             <div className="space-y-3">
               {savings.map((item, index) => (
@@ -40,16 +40,19 @@ const Pricing = () => {
                   className="flex justify-between items-center py-2 border-b border-primary-foreground/20"
                 >
                   <span className="opacity-90">{item.item}</span>
-                  <span className="font-semibold">{item.value}</span>
+                  <span className="font-semibold line-through opacity-60">{item.value}</span>
                 </div>
               ))}
               <div className="flex justify-between items-center py-3 text-lg font-bold">
-                <span>Total</span>
-                <span className="text-accent">R$ 2.290,00</span>
+                <span>Valor se contratado separadamente</span>
+                <span className="text-accent line-through">R$ 2.290,00</span>
               </div>
             </div>
+            <p className="text-center text-base font-medium">
+              Tudo isso por apenas <span className="text-accent text-xl font-bold">R$ 197,00</span>
+            </p>
             <p className="text-center text-sm opacity-80">
-              Adicione a isso o <strong>GANHO DE TEMPO</strong>, que não tem preço.
+              + o <strong>GANHO DE TEMPO</strong>, que não tem preço.
             </p>
           </div>
 
