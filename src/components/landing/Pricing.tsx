@@ -31,7 +31,7 @@ const Pricing = () => {
           {/* Savings */}
           <div className="space-y-6">
             <h3 className="text-xl font-serif mb-4">
-              Tudo isso <span className="text-accent">incluso no curso:</span>
+              Tudo isso que você pagaria separado <span className="text-accent">está incluso no curso:</span>
             </h3>
             <div className="space-y-3">
               {savings.map((item, index) => (
