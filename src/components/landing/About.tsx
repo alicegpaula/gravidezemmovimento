@@ -2,9 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const topics = [
-  "O que é Parto Humanizado? Parto em casa? Na banheira?",
   "Tipos de parto: Natural, Normal, Cesariana",
-  "Fases do trabalho de parto: quando ir para maternidade?",
   "Técnicas naturais para alívio de dor, anestesia, analgesia",
   "Descanso inteligente: posicionamentos estratégicos",
   "Importância da Equipe: preciso contratar?",
