@@ -42,6 +42,13 @@ const About = () => {
               </h2>
             </div>
 
+            {/* Perguntas provocativas */}
+            <div className="space-y-3 text-lg text-foreground/90 italic border-l-4 border-primary/40 pl-4">
+              <p>Você sabe a diferença entre parto humanizado, parto em casa, no hospital e parto na banheira?</p>
+              <p>É tudo a mesma coisa?</p>
+              <p>Você sabe a hora certa de ir para a maternidade?</p>
+            </div>
+
             <p className="text-lg text-muted-foreground leading-relaxed">
               Curso 100% online para <strong>mulheres grávidas</strong>, ou que{" "}
               <strong>desejam engravidar</strong>, que querem estar{" "}
@@ -56,7 +63,7 @@ const About = () => {
 
             <div className="space-y-4">
               <p className="font-medium text-foreground">
-                Você vai entender tudo sobre:
+                Você vai saber responder a todas estas perguntas e mais:
               </p>
               <ul className="space-y-3">
                 {topics.map((topic, index) => (
