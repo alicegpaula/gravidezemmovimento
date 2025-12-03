@@ -10,8 +10,8 @@ const Team = () => {
             Quem Somos
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mt-4">
-            Conheça as{" "}
-            <span className="text-primary">Instrutoras</span>
+            Saiba quem são{" "}
+            <span className="text-primary">Rafa e Alice</span>
           </h2>
         </div>
 
@@ -30,7 +30,7 @@ const Team = () => {
               Rafaela Garcia Bragança
             </h3>
             <p className="text-primary font-medium mb-4">
-              Fisioterapeuta | UFMG
+              Fisioterapeuta | UFMG | Instrutora do Curso
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-md">
               Graduada em Fisioterapia pela UFMG, pós-graduada em Movimento Humano. 
@@ -54,13 +54,14 @@ const Team = () => {
               Alice de Paula
             </h3>
             <p className="text-primary font-medium mb-4">
-              Empresária e Mãe da Lisa
+              Empresária, Mãe da Lisa e Modelo do Curso
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-md">
               Graduada em Ciência da Computação (UNIBH), trabalha com Marketing 
               Digital e Tráfego Pago para sua empresa e é criadora de conteúdo. 
-              Alice e sua filha Lisa participaram das aulas de exercícios em cada 
-              fase da gestação. Vem acompanhar a evolução!
+              Alice vivenciou todas as aulas na prática durante sua gestação, 
+              servindo como modelo do curso junto com sua filha Lisa. Acompanhe 
+              a evolução real de uma gestante em movimento!
             </p>
           </div>
         </div>
