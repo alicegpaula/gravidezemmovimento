@@ -52,7 +52,7 @@ const Pricing = () => {
               Tudo isso por apenas <span className="text-accent text-xl font-bold">R$ 197,00</span>
             </p>
             <p className="text-center text-sm opacity-80">
-              + o <strong>GANHO DE TEMPO</strong>, que não tem preço.
+              + ganho de tempo de deslocamento <strong>(você faz tudo de onde quiser)</strong>, que não tem preço.
             </p>
           </div>
 
