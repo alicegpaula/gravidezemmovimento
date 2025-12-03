@@ -51,9 +51,11 @@ const Pricing = () => {
             <p className="text-center text-base font-medium">
               Tudo isso por apenas <span className="text-accent text-xl font-bold">R$ 197,00</span>
             </p>
-            <p className="text-center text-sm opacity-80">
-              + ganho de tempo de deslocamento <strong>(você faz tudo de onde quiser)</strong>, que não tem preço.
-            </p>
+            <div className="text-center mt-4 p-4 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20">
+              <p className="text-base font-medium">
+                + ganho de tempo de deslocamento <span className="text-accent font-bold">(você faz tudo de onde quiser)</span>, que não tem preço.
+              </p>
+            </div>
           </div>
 
           {/* Price Card */}
