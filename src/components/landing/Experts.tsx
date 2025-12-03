@@ -1,4 +1,10 @@
 import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const experts = [
   {
@@ -61,8 +67,9 @@ const experts = [
 
 const Experts = () => {
   return (
-    <section id="bonus" className="section-padding bg-card">
-      <div className="container-wide">
+    <TooltipProvider>
+      <section id="bonus" className="section-padding bg-card">
+        <div className="container-wide">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary font-medium tracking-wide uppercase text-sm">
@@ -99,9 +106,16 @@ const Experts = () => {
                 <p className="text-sm text-primary font-medium mb-3">
                   {expert.role}
                 </p>
-                <p className="text-sm text-muted-foreground mb-3 line-clamp-3">
-                  {expert.description}
-                </p>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <p className="text-sm text-muted-foreground mb-3 line-clamp-3 cursor-help">
+                      {expert.description}
+                    </p>
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-xs">
+                    <p>{expert.description}</p>
+                  </TooltipContent>
+                </Tooltip>
                 <p className="text-xs text-muted-foreground/70">
                   {expert.instagram}
                 </p>
@@ -118,8 +132,9 @@ const Experts = () => {
             </a>
           </Button>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </TooltipProvider>
   );
 };
 
