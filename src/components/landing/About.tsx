@@ -35,8 +35,7 @@ const About = () => {
                 Sobre o Curso
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground">
-                O que é o{" "}
-                <span className="text-primary">Gravidez em Movimento</span>?
+                Você está <span className="text-primary">preparada</span>?
               </h2>
             </div>
 
@@ -47,21 +46,27 @@ const About = () => {
               <p>Você sabe a hora certa de ir para a maternidade?</p>
             </div>
 
+            <div className="bg-accent/20 p-4 rounded-lg border-l-4 border-accent">
+              <p className="text-foreground font-medium">
+                Se você hesitou em alguma resposta, <strong>não se preocupe</strong> — a maioria das gestantes também não sabe. 
+                Mas imagine chegar no dia do parto <strong>segura, informada e sem medo</strong>.
+              </p>
+            </div>
+
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Curso 100% online para <strong>mulheres grávidas</strong>, ou que{" "}
-              <strong>desejam engravidar</strong>, que querem estar{" "}
-              <strong>bem informadas e saudáveis</strong>, garantindo o melhor para 
-              elas e seus bebês.
+              O <strong>Gravidez em Movimento</strong> é o curso 100% online que vai 
+              transformar sua gestação em uma jornada de <strong>autoconhecimento e bem-estar</strong>. 
+              Porque você merece mais do que apenas "passar" pela gravidez — você merece <strong>viver intensamente</strong> cada momento.
             </p>
 
             <p className="text-muted-foreground">
-              São <strong>9 módulos</strong> divididos entre conhecimento e prática 
-              que irão mudar sua forma de ver e viver a gestação.
+              São <strong>9 módulos</strong> completos que vão te dar clareza, confiança 
+              e as ferramentas para cuidar de você enquanto cuida do seu bebê.
             </p>
 
             <div className="space-y-4">
               <p className="font-medium text-foreground">
-                Você vai saber responder a todas estas perguntas e mais:
+                Com o curso, você vai dominar:
               </p>
               <ul className="space-y-3">
                 {topics.map((topic, index) => (
@@ -79,7 +84,7 @@ const About = () => {
 
             <Button variant="cta" size="lg" asChild>
               <a href="https://pay.hotmart.com/U88619493A" target="_blank" rel="noopener noreferrer">
-                Eu Quero Mais Saúde
+                Quero Me Preparar Agora
               </a>
             </Button>
           </div>

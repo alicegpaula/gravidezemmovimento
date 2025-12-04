@@ -29,19 +29,19 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-semibold text-foreground leading-tight">
-            Gestação{" "}
-            <span className="text-primary">Saudável</span>
+            Sua gestação <span className="text-primary">merece</span>
             <br />
             <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-              com Tranquilidade e{" "}
-              <span className="text-secondary-foreground italic">sem Desconfortos</span>
+              mais do que só{" "}
+              <span className="text-secondary-foreground italic">esperar o bebê</span>
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Informação traz segurança e tranquilidade. Prepare-se para ter uma 
-            gravidez descomplicada e uma experiência positiva de parto.
+            <strong>Você não precisa escolher entre cuidar do bebê e cuidar de você.</strong>{" "}
+            Descubra como viver uma gravidez ativa, informada e cheia de bem-estar 
+            — para vocês duas.
           </p>
 
           {/* Trust badges - destacados */}
@@ -74,7 +74,7 @@ const Hero = () => {
               asChild
             >
               <a href="https://pay.hotmart.com/U88619493A" target="_blank" rel="noopener noreferrer">
-                Quero Garantir Minha Vaga
+                Quero Cuidar de Mim e do Meu Bebê
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild>
