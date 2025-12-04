@@ -5,6 +5,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const experts = [
   {
@@ -71,7 +78,7 @@ const Experts = () => {
       <section id="bonus" className="section-padding bg-card">
         <div className="container-wide">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-primary font-medium tracking-wide uppercase text-sm">
             Aulas Bônus
           </span>
@@ -80,55 +87,67 @@ const Experts = () => {
             <span className="text-primary">Especialistas</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Conteúdos exclusivos com vários profissionais de diversas áreas de 
-            interesse da gestante
+            Você merece cuidar de <strong>VOCÊ por inteiro</strong>. Conteúdos exclusivos 
+            sobre saúde mental, beleza, nutrição e muito mais para você se sentir bem 
+            em todas as áreas da sua vida.
           </p>
         </div>
 
-        {/* Experts Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {experts.map((expert, index) => (
-            <div
-              key={index}
-              className="group bg-background rounded-xl p-6 shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-accent">
-                <img
-                  src={expert.image}
-                  alt={expert.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <h3 className="font-serif text-lg font-semibold text-foreground">
-                  {expert.name}
-                </h3>
-                <p className="text-sm text-primary font-medium mb-3">
-                  {expert.role}
-                </p>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <p className="text-sm text-muted-foreground mb-3 line-clamp-3 cursor-help">
-                      {expert.description}
-                    </p>
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-xs">
-                    <p>{expert.description}</p>
-                  </TooltipContent>
-                </Tooltip>
-                <p className="text-xs text-muted-foreground/70">
-                  {expert.instagram}
-                </p>
-              </div>
-            </div>
-          ))}
+        {/* Experts Carousel */}
+        <div className="px-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {experts.map((expert, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="group bg-background rounded-xl p-6 shadow-soft hover:shadow-card transition-all duration-300 h-full flex flex-col">
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-accent">
+                      <img
+                        src={expert.image}
+                        alt={expert.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="text-center flex flex-col flex-grow">
+                      <h3 className="font-serif text-lg font-semibold text-foreground">
+                        {expert.name}
+                      </h3>
+                      <p className="text-sm text-primary font-medium mb-3">
+                        {expert.role}
+                      </p>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <p className="text-sm text-muted-foreground mb-3 line-clamp-3 cursor-help flex-grow">
+                            {expert.description}
+                          </p>
+                        </TooltipTrigger>
+                        <TooltipContent className="max-w-xs">
+                          <p>{expert.description}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                      <p className="text-xs text-muted-foreground/70">
+                        {expert.instagram}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
         </div>
 
         {/* CTA */}
         <div className="text-center mt-12">
           <Button variant="cta" size="lg" asChild>
             <a href="https://pay.hotmart.com/U88619493A" target="_blank" rel="noopener noreferrer">
-              Comprar Agora
+              Quero Cuidar de Mim
             </a>
           </Button>
         </div>

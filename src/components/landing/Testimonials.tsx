@@ -1,5 +1,4 @@
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Star } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -42,14 +41,14 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="text-primary font-medium tracking-wide uppercase text-sm">
-            Depoimentos
+            Histórias Reais
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mt-4 mb-4">
-            O que nossas alunas{" "}
-            <span className="text-primary">dizem</span>
+            Elas escolheram <span className="text-primary">cuidar de si</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Histórias reais de mamães que transformaram sua gestação
+            Veja como outras mamães transformaram suas gestações e chegaram ao parto 
+            <strong> confiantes e preparadas</strong>
           </p>
         </div>
 

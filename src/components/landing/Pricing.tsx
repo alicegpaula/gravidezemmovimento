@@ -19,11 +19,12 @@ const Pricing = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif mb-6">
-            Chega de juntar informações soltas da internet
+            Pare de juntar informações soltas (e duvidosas) da internet
           </h2>
           <p className="text-lg opacity-90">
-            Obtenha informações seguras de profissionais qualificados em um único 
-            lugar para acessar onde e quando for melhor para você!
+            Sua gestação é única demais para depender de dicas aleatórias. 
+            Tenha <strong>tudo que você precisa</strong>, organizado por especialistas, 
+            para acessar quando e onde quiser.
           </p>
         </div>
 
@@ -31,7 +32,7 @@ const Pricing = () => {
           {/* Savings */}
           <div className="space-y-6">
             <h3 className="text-xl font-serif mb-4">
-              Tudo isso que você pagaria separado <span className="text-accent">está incluso no curso:</span>
+              Olha só o que você teria que pagar <span className="text-accent">se contratasse cada coisa separado:</span>
             </h3>
             <div className="space-y-3">
               {savings.map((item, index) => (
@@ -44,7 +45,7 @@ const Pricing = () => {
                 </div>
               ))}
               <div className="flex justify-between items-center py-3 text-lg font-bold">
-                <span>Valor se contratado separadamente</span>
+                <span>Total se contratado separadamente</span>
                 <span className="text-accent line-through">R$ 2.290,00</span>
               </div>
             </div>
@@ -80,15 +81,21 @@ const Pricing = () => {
                 </p>
               </div>
 
+              <div className="bg-accent/10 p-3 rounded-lg">
+                <p className="text-sm text-foreground font-medium">
+                  Menos de <strong>R$ 0,37 por dia</strong> para transformar sua gestação
+                </p>
+              </div>
+
               <Button variant="cta" size="xl" className="w-full" asChild>
                 <a href="https://pay.hotmart.com/U88619493A" target="_blank" rel="noopener noreferrer">
-                  Comprar Agora
+                  Sim, Eu Mereço Isso!
                 </a>
               </Button>
 
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <Shield className="w-4 h-4 text-primary" />
-                <span>Garantia de 7 dias - 100% do seu dinheiro de volta</span>
+                <span><strong>Garantia de 7 dias</strong> — Se não gostar, devolvemos 100% do seu dinheiro</span>
               </div>
 
               {/* Features */}
@@ -110,15 +117,15 @@ const Pricing = () => {
         <div className="grid sm:grid-cols-3 gap-6 mt-16 pt-12 border-t border-primary-foreground/20">
           <div className="text-center">
             <Check className="w-8 h-8 text-accent mx-auto mb-3" />
-            <p className="opacity-90">Não vai precisar se deslocar, terá acesso a todo conteúdo de casa!</p>
+            <p className="opacity-90"><strong>Sem sair de casa</strong> — acesse todo o conteúdo do seu sofá, da sua cama, de onde quiser</p>
           </div>
           <div className="text-center">
             <Check className="w-8 h-8 text-accent mx-auto mb-3" />
-            <p className="opacity-90">Poderá se exercitar em qualquer lugar, no seu tempo, sem hora marcada!</p>
+            <p className="opacity-90"><strong>No seu tempo</strong> — exercite-se quando seu corpo pedir, sem hora marcada</p>
           </div>
           <div className="text-center">
             <Check className="w-8 h-8 text-accent mx-auto mb-3" />
-            <p className="opacity-90">Acesso a profissionais especializados em diversas áreas!</p>
+            <p className="opacity-90"><strong>Com especialistas</strong> — 8 profissionais de diversas áreas cuidando de você</p>
           </div>
         </div>
       </div>

@@ -23,15 +23,13 @@ const Benefits = () => {
                 Aulas Práticas
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground">
-                Força, Mobilidade e{" "}
-                <span className="text-primary italic">Flexibilidade</span>
+                Seu corpo está <span className="text-primary italic">pedindo movimento</span>
               </h2>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Treinos completos para fazer junto com a Rafa e a Alice,{" "}
-              <strong>onde e quando puder</strong>, com nenhum ou pouco material 
-              que você tem em casa.
+              Você sabia que gestantes ativas têm <strong>partos mais rápidos e recuperação mais tranquila</strong>? 
+              Nada de ficar parada esperando — seu corpo foi feito para se mover, mesmo na gravidez.
             </p>
 
             <div className="p-4 rounded-lg bg-card shadow-soft">
@@ -39,13 +37,14 @@ const Benefits = () => {
                 São mais de <span className="text-primary font-bold">30 aulas</span>
               </p>
               <p className="text-center text-sm text-muted-foreground">
-                pensadas e adaptadas especialmente para cada trimestre da gestação
+                para você treinar junto com a Rafa e a Alice, <strong>onde e quando quiser</strong>, 
+                com pouco ou nenhum material
               </p>
             </div>
 
             <div className="space-y-4">
               <p className="font-semibold text-foreground text-lg">
-                Benefícios da atividade física na gestação:
+                Por que se exercitar agora vai mudar tudo:
               </p>
               <ul className="grid sm:grid-cols-2 gap-3">
                 {benefits.map((benefit, index) => (
@@ -64,11 +63,11 @@ const Benefits = () => {
 
             <div className="pt-4">
               <p className="text-xl font-serif text-foreground mb-4">
-                <strong>PRIORIZE</strong> a sua saúde e do seu bebê!
+                <strong>Você</strong> é a primeira casa do seu bebê. <strong>Cuide dela.</strong>
               </p>
               <Button variant="cta" size="lg" asChild>
                 <a href="https://pay.hotmart.com/U88619493A" target="_blank" rel="noopener noreferrer">
-                  Eu Quero Mais Saúde
+                  Quero Começar a Me Mover
                 </a>
               </Button>
             </div>
