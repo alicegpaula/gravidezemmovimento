@@ -174,4 +174,17 @@
   .container-wide {
     @apply max-w-6xl mx-auto;
   }
+
+  .animate-pulse-gentle {
+    animation: pulse-gentle 2s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    box-shadow: 0 4px 20px -4px hsl(350 35% 85% / 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 30px -4px hsl(350 35% 85% / 0.6);
+  }
 }
