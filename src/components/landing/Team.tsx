@@ -54,7 +54,7 @@ const Team = () => {
               Alice de Paula
             </h3>
             <p className="text-primary font-medium mb-4">
-              Empresária, Mãe da Lisa e Modelo do Curso
+              Empresária | Mãe da Lisa | Modelo do Curso
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-md">
               Graduada em Ciência da Computação (UNIBH), trabalha com Marketing 

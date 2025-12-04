@@ -1,4 +1,12 @@
-import { Star } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -32,11 +40,11 @@ const Testimonials = () => {
     <section id="depoimentos" className="section-padding bg-background">
       <div className="container-wide">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="text-primary font-medium tracking-wide uppercase text-sm">
             Depoimentos
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mt-4 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mt-4 mb-4">
             O que nossas alunas{" "}
             <span className="text-primary">dizem</span>
           </h2>
@@ -45,39 +53,50 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-card transition-all duration-300"
-            >
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
-              </div>
-              
-              {/* Quote */}
-              <blockquote className="text-muted-foreground mb-6 leading-relaxed">
-                "{testimonial.text}"
-              </blockquote>
-              
-              {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-                  <span className="text-accent-foreground font-semibold text-sm">
-                    {testimonial.name.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">Aluna do curso</p>
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Testimonials Carousel */}
+        <div className="px-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-card rounded-xl p-6 shadow-soft hover:shadow-card transition-all duration-300 h-full flex flex-col">
+                    {/* Stars */}
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    
+                    {/* Quote */}
+                    <blockquote className="text-muted-foreground mb-6 leading-relaxed flex-grow">
+                      "{testimonial.text}"
+                    </blockquote>
+                    
+                    {/* Author */}
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                        <span className="text-accent-foreground font-semibold text-sm">
+                          {testimonial.name.charAt(0)}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">Aluna do curso</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
         </div>
       </div>
     </section>

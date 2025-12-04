@@ -61,7 +61,7 @@ const Pricing = () => {
           {/* Price Card */}
           <div className="bg-card text-card-foreground rounded-2xl p-8 md:p-10 shadow-elevated">
             <div className="text-center space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground text-sm font-medium">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground text-xl md:text-2xl font-bold">
                 🔥 Oferta Especial
               </div>
 

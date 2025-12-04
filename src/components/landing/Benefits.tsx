@@ -17,7 +17,7 @@ const Benefits = () => {
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-5">
             <div className="space-y-4">
               <span className="text-primary font-medium tracking-wide uppercase text-sm">
                 Aulas Práticas
@@ -34,11 +34,11 @@ const Benefits = () => {
               que você tem em casa.
             </p>
 
-            <div className="p-6 rounded-xl bg-card shadow-soft">
-              <p className="text-center text-2xl font-serif text-foreground mb-2">
+            <div className="p-4 rounded-lg bg-card shadow-soft">
+              <p className="text-center text-3xl md:text-4xl font-serif text-foreground mb-1">
                 São mais de <span className="text-primary font-bold">30 aulas</span>
               </p>
-              <p className="text-center text-muted-foreground">
+              <p className="text-center text-sm text-muted-foreground">
                 pensadas e adaptadas especialmente para cada trimestre da gestação
               </p>
             </div>
