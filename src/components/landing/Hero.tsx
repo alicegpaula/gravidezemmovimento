@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-gestante.jpg";
 
 const Hero = () => {
   return (
@@ -13,8 +13,9 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-background/70" />
+      {/* Overlay com gradiente suave que combina com a paleta */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/80 to-background/70" />
+      <div className="absolute inset-0 bg-primary/5" />
       
       {/* Content */}
       <div className="relative z-10 container-narrow px-4 sm:px-6 text-center">
