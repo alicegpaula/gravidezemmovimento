@@ -1,5 +1,6 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
+import VideoPreview from "@/components/landing/VideoPreview";
 import About from "@/components/landing/About";
 import Benefits from "@/components/landing/Benefits";
 import Experts from "@/components/landing/Experts";
@@ -14,6 +15,7 @@ const Index = () => {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <VideoPreview />
       <About />
       <Benefits />
       <Experts />
