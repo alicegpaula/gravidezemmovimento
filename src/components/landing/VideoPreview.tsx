@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const VideoPreview = () => {
   return (
     <section className="py-12 md:py-16 bg-background">
@@ -14,7 +16,7 @@ const VideoPreview = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-8">
           <div className="aspect-video rounded-2xl overflow-hidden shadow-elevated">
             <iframe
               src="https://www.youtube.com/embed/GR7bG0ppjAQ"
@@ -23,6 +25,14 @@ const VideoPreview = () => {
               allowFullScreen
               className="w-full h-full"
             />
+          </div>
+
+          <div className="text-center">
+            <Button variant="cta" size="lg" asChild>
+              <a href="https://pay.hotmart.com/U88619493A" target="_blank" rel="noopener noreferrer">
+                Quero Começar Agora
+              </a>
+            </Button>
           </div>
         </div>
       </div>
