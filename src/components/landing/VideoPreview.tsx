@@ -1,6 +1,6 @@
 const VideoPreview = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="py-12 md:py-16 bg-background">
       <div className="container-wide">
         <div className="text-center space-y-4 mb-10">
           <span className="text-primary font-medium tracking-wide uppercase text-sm">
