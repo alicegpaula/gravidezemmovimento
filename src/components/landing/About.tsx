@@ -18,7 +18,7 @@ const About = () => {
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src="https://curso.gravidezemmovimento.com.br/assets/IMG_1050.jpg"
+                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
                 alt="Gestante fazendo exercícios com acompanhamento profissional"
                 className="w-full h-full object-cover"
               />
